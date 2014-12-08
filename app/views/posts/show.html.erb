@@ -1,0 +1,5 @@
+<h1 class = 'title'><%= @post.title %></h1>
+<p class = 'date'>Created <%= (@post.created_at.to_formatted_s(:long_ordinal)) %></p>
+<p class = 'body'><%= @post.body %></p>
+<%= link_to 'Delete', post_path(@post), method: :delete %>
+<%= link_to 'Home', root_path %>
