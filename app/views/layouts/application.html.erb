@@ -2,13 +2,32 @@
 <html>
 <head>
   <title>Blog</title>
-  <%= stylesheet_link_tag 'application', media: 'all' %>
-  <%= javascript_include_tag 'application', :defer => "defer" %>
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <%= javascript_include_tag "application", :defer => "defer" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <% if user_signed_in? %>
+      <p>Welcome Franx0</p>
+      <div class = "buttons"><%= link_to "Log Out", destroy_user_session_path, method: :delete %></div> 
+    <% end %>
+  </header>
 
-<%= yield %>
+  <aside class = "links">
+    <% if !current_page?(new_user_session_path) %>
+      <p><%= link_to "All posts", posts_path %> </p>
+      <p><%= link_to "About me", about_path %></p>
+      <%= render "shared/searchForm" %>
+    <% elsif current_page?(about_path) %>
+      <p><%= link_to "Home", root_path %></p>
+      <p><%= link_to "All posts", posts_path %> </p>
+    <% else %>
+      <%= link_to "Home", root_path %>
+    <% end %>
+  </aside>
+
+    <%= yield %>
 
 </body>
 </html>

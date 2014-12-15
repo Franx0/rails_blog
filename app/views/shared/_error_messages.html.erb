@@ -1,0 +1,10 @@
+<% if target.errors.any? %>  
+<div id = "errors">  
+  <h2><%= pluralize(target.errors.count, "error") %> prevented this post for saving</h2>  
+  <ul>  
+  <% target.errors.full_messages.each do |message| %>  
+    <li><%= message %></li>  
+  <% end %>  
+  </ul>  
+</div>  
+<% end %> 

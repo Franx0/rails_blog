@@ -1,7 +1,11 @@
 class PostsController < ApplicationController
-
+    before_action :authenticate_user!, except: [:index, :show]
     def index
-        @post = Post.all.order('created_at DESC')
+        if params[:search]
+            @post = Post.search(params[:search]).order("created_at DESC")
+        else
+            @post = Post.all.order("created_at DESC")
+        end
     end
 
     def new
@@ -11,9 +15,8 @@ class PostsController < ApplicationController
     def create
         @post = Post.new(post_params)
         @post.save
-
         if @post.save
-            redirect_to @post
+            redirect_to posts_path
         else 
             redirect_to new_post_path
         end
@@ -21,7 +24,6 @@ class PostsController < ApplicationController
 
     def show
         @post = Post.find(params[:id])
-        @comment = @post.comments.new
     end
 
     def edit
@@ -30,8 +32,8 @@ class PostsController < ApplicationController
 
     def update
         @post = Post.find(params[:id])
-        if @post.update
-            redirect_to @post
+        if @post.update_attributes post_params
+            redirect_to post_path
         else
             redirect_to edit_post_path
         end
@@ -50,7 +52,7 @@ class PostsController < ApplicationController
 
     private
     def post_params
-        params.require(:post).permit(:title, :body)
+        params.require(:post).permit(:title, :body, :category)
     end
 end
 

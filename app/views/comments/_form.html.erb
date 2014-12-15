@@ -1,14 +1,5 @@
 <%= form_for [@post, @post.comments.build] do |f| %>
-    <% if @post.comments.build.errors.any? %>
-        <div id = 'errors'>
-            <h2><%= pluralize(@post.comments.build.errors.count, 'errors') %></h2>
-            <ul>
-                <% @post.comments.build.errors.full_messages.each do |message| %>
-                    <li><%= message %></li>
-                <% end %>
-            </ul>
-        </div>
-    <% end %>
+    <%= render "shared/error_messages", :target => @post.comments.build %>
     <p>
         <%= f.label :name %></br>
         <%= f.text_field :name %>
@@ -23,4 +14,3 @@
         <%= f.submit %>
     </p>
 <% end %>
-<%= button_to "Cancel", @post %>
