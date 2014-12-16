@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Write2Learn</title>
   <%= stylesheet_link_tag "application", media: "all" %>
+  <link href = "http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag "application", :defer => "defer" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <header>
-    <% if user_signed_in? %>
-      <p>Welcome Franx0</p>
-      <div class = "buttons"><%= link_to "Log Out", destroy_user_session_path, method: :delete %></div> 
-    <% end %>
-  </header>
-
-  <aside class = "links">
-    <% if !current_page?(new_user_session_path) %>
-      <p><%= link_to "All posts", posts_path %> </p>
-      <p><%= link_to "About me", about_path %></p>
+    <div class = "header">
+      <h1>Write2Learn</h1>
       <%= render "shared/searchForm" %>
-    <% elsif current_page?(about_path) %>
-      <p><%= link_to "Home", root_path %></p>
-      <p><%= link_to "All posts", posts_path %> </p>
+    <% if user_signed_in? %>
+      <%= link_to "Welcome Franx0", destroy_user_session_path, method: :delete, :class => "header_links" %>
+    <% end %>
+    </div>
+  </header>
+  <aside>
+    <% if current_page?(new_user_session_path) %>
+      <%= link_to "Home", root_path, :class => "links" %>
+    <% elsif current_page?(root_path) %>
+      <%= link_to "All post", posts_path, :class => "links" %><br />
+      <%= link_to "About me", about_path, :class => "links" %>
+    <% elsif current_page?(posts_path) && user_signed_in? %>
+      <%= link_to "Home", root_path, :class => "links" %><br />
+      <%= link_to "About me", about_path, :class => "links" %><br />
+      <%= link_to "New post", new_post_path, :class => "links" %>
     <% else %>
-      <%= link_to "Home", root_path %>
+      <%= link_to "Home", root_path, :class => "links" %><br />
+      <%= link_to "All post", posts_path, :class => "links" %>
     <% end %>
   </aside>
 
