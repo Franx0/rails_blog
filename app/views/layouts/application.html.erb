@@ -19,17 +19,15 @@
     </div>
   </header>
   <aside>
-    <% if current_page?(new_user_session_path) %>
-      <%= link_to "Home", root_path, :class => "links" %>
-    <% elsif current_page?(root_path) %>
-      <%= link_to "All post", posts_path, :class => "links" %><br />
+    <% if current_page?(root_path) %>
+      <%= link_to "All post", posts_path, :class => "links" %>
       <%= link_to "About me", about_path, :class => "links" %>
     <% elsif current_page?(posts_path) && user_signed_in? %>
-      <%= link_to "Home", root_path, :class => "links" %><br />
-      <%= link_to "About me", about_path, :class => "links" %><br />
+      <%= link_to "Home", root_path, :class => "links" %>
+      <%= link_to "About me", about_path, :class => "links" %>
       <%= link_to "New post", new_post_path, :class => "links" %>
     <% else %>
-      <%= link_to "Home", root_path, :class => "links" %><br />
+      <%= link_to "Home", root_path, :class => "links" %>
       <%= link_to "All post", posts_path, :class => "links" %>
     <% end %>
   </aside>

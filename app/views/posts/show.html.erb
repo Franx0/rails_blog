@@ -1,18 +1,18 @@
 <section>
-    <div class = "posts read"> 
+    <div class = "posts read text"> 
         <h2 class = "title"><%= @post.title %></h2>
         <p class = "date">Created <%= (@post.created_at.to_formatted_s(:long_ordinal)) %></p>
         <p class = "body read"><%= @post.body %></p>
 
         <% if user_signed_in? %>
-            <%= link_to "Delete Post", post_path(@post), method: :delete, :class => "links" %>
-            <%= link_to "Edit Post", edit_post_path(@post), :class => "links" %>
+            <%= link_to "Delete Post", post_path(@post), method: :delete, :class => "links post_links" %>
+            <%= link_to "Edit Post", edit_post_path(@post), :class => "links post_links" %>
         <% end %>
     </div>
-    <div class = "body comments">
-        <h2><%= @post.comments.count %> comments</h2>
+    <div class = "comments">
+        <h2 class = "title"><%= @post.comments.count %> comments</h2>
         <%= render @post.comments %>
-        <h3>Add a comment:</h3>
+        <h4 class = "title">Add a comment:</h4>
         <%= render "comments/form" %>
     </div>
 </section>

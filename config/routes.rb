@@ -57,3 +57,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+RailsBlog::Application.routes.draw do
+  #Last route in routes.rb
+  match '*a', :to => 'errors#routing', :via => [:get]
+end
+
