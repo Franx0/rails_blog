@@ -220,6 +220,7 @@ section{
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
   font-size: 1em;
+  text-align: justify;
 }
 
 .comments{
@@ -249,10 +250,12 @@ section{
 
 .comment{
   width: 70%;
+  margin: 2% 0;
   box-shadow: 1px 2px 5px #213888;
   -moz-box-shadow: 1px 2px 5px #213888;
   -webkit-box-shadow: 1px 2px 5px #213888;
   background-color: #F1F1F1;
+  word-wrap: break-word;
 }
 
 .comment p{
