@@ -18,20 +18,26 @@
     <% end %>
     </div>
   </header>
-  <aside>
-    <% if current_page?(root_path) %>
+  
+  <% if current_page?(root_path) %>
+    <aside>
       <%= link_to "All post", posts_path, :class => "links" %>
       <%= link_to "About me", about_path, :class => "links" %>
-    <% elsif current_page?(posts_path) && user_signed_in? %>
+    </aside>
+  <% elsif current_page?(posts_path) && user_signed_in? %>
+    <aside>
       <%= link_to "Home", root_path, :class => "links" %>
       <%= link_to "About me", about_path, :class => "links" %>
       <%= link_to "New post", new_post_path, :class => "links" %>
-    <% elsif current_page?(new_user_session_path) %>
-    <% else %>
+    </aside>
+  <% elsif current_page?(new_user_session_path) %>
+  <% else %>
+    <aside>
       <%= link_to "Home", root_path, :class => "links" %>
       <%= link_to "All post", posts_path, :class => "links" %>
-    <% end %>
-  </aside>
+    </aside>
+  <% end %>
+  
 
     <%= yield %>
 
