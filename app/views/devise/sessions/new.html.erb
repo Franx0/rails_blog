@@ -1,25 +1,25 @@
-<section class = "posts read text"> 
-  <h2 class = "title centrar">Log in</h2>
+<section class = "text log"> 
+  <h2 class = "title field">Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="centrar field">
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, :class => "inputs", autofocus: true %>
   </div>
 
-  <div class="centrar field">
+  <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, :class => "textareas", autocomplete: "off" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="centrar read field">
+    <div class="field">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end -%>
 
-  <div class="actions centrar">
+  <div class="actions field" >
     <%= f.submit "Log in", :class => "submit" %>
   </div>
 <% end %>
