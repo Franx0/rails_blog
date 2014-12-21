@@ -1,0 +1,410 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header{
+  padding-top: 1%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+hr{
+  margin: 0;
+  border: 0.05em solid #213888;
+}
+
+.header{
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: 300px;
+  box-shadow: 0 0 10px 2px #545A75;
+  -moz-box-shadow: 0 0 10px 2px #545A75;
+  -webkit-box-shadow: 0 0 10px 2px #545A75;
+  background-color: #545A75;
+  background-image: url("header.png");
+}
+
+.header_links{
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5em;
+  color: #FFF; 
+}
+
+header h1{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  margin: 0;
+  text-shadow: -1px 0 #545A75, 2px 0 #545A75, 0 2px #545A75, 0 -1px #545A75;
+  -moz-text-shadow: -1px 0 #545A75, 2px 0 #545A75, 0 2px #545A75, 0 -1px #545A75;
+  -webkit-text-shadow: -1px 0 #545A75, 2px 0 #545A75, 0 2px #545A75, 0 -1px #545A75;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 8em;
+  color: #FFF;
+}
+
+
+.search:focus{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+  color: #FFF;
+  outline: none;
+}
+
+.search{
+  display: inline-block;
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+  width: 50%;
+  border-radius: 0.5em:;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+  color: #FFF;
+  border-color: solid #FFF;
+  background-color: transparent;
+}
+
+.submit_position{
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+}
+
+.submit{
+  border-radius: 0.5em:;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+  border-color: #FFF;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+::-moz-placeholder {
+  color: #FFF;
+}
+
+:moz-placeholder{
+  color: #FFF;
+}
+
+:ms-input-placeholder{
+  color: #FFF;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+aside{
+  display: inline-block;
+  float: left;
+  width: 15%;
+  margin-top: 2%;
+  margin-left: 3%;
+  background-color: #9F9C9E;
+  box-shadow: 5px 5px 10px 2px 1#C5C5C5;
+  -moz-box-shadow: 5px 5px 10px 2px #C5C5C5;
+  -webkit-box-shadow: 5px 5px 10px 2px #C5C5C5;
+}
+
+.links{
+  display: block;
+  margin: 3%;
+  text-decoration: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 2em;
+  color: #213888;
+}
+
+section{
+  display: inline-block;
+  float: right;
+  width: 75%;
+  padding-right: 3%;
+  margin-top: 0.5%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  text-decoration: none
+}
+
+.noDecoration{
+  text-decoration: none;
+  color: #000;
+}
+
+.posts{
+  float: left;
+  display: inline-block;
+  width: 45%;
+  margin-top: 2%;
+  margin-left: 2%;
+  padding: 0 1% 1% 2%;
+  background-color: #F1F1F1;
+  word-wrap: break-word;
+}
+
+.posts:hover{
+  position: relative;
+  left: 1%;
+  box-shadow: 5px 5px 10px 2px #C5C5C5;
+  -moz-box-shadow: 5px 5px 10px 2px #C5C5C5;
+  -webkit-box-shadow: 5px 5px 10px 2px #C5C5C5;
+}
+
+.read:hover{
+  position: relative;
+  left: 0;
+  box-shadow: 0 0 #C5C5C5;
+  -moz-box-shadow: 0 0 #C5C5C5;
+  -webkit-box-shadow: 0 0 #C5C5C5;
+}
+
+.post_links{
+  right: 1%;
+  bottom: 1%;
+  float: right;
+  font-size: 1em;
+}
+
+.posts a{
+  margin: 0 1%;
+}
+
+.title{
+  margin: 1% auto;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #213888;
+}
+
+.date{
+  margin: 2% 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+}
+
+.body{
+  height: 4.5em;
+  overflow: hidden;
+  margin: 3% 0 0 0;
+  font-size: 1em;
+  background-color: #F1F1F1;
+}
+
+.read{
+  overflow: visible;
+  height: auto;
+  width: 97%;
+  background-color: #F1F1F1;
+}
+
+.text{
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.comments{
+  float: right;
+  display: inline-block;
+  width: 97%;
+  padding-left: 1%;
+  margin-top: 2%;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  background-color: #FFF;
+}
+
+.comments h3{
+  float: right;
+  width: 100%;
+  padding-left: 1%;
+  margin: 0;
+  border-top: 1px solid #213888;
+  border-bottom: 1px solid #213888;
+  border-left: 1px solid #213888;
+}
+
+.comments h4{
+  font-size: 1.5em;
+}
+
+.comment{
+  width: 70%;
+  margin: 2% 0;
+  box-shadow: 1px 2px 5px #213888;
+  -moz-box-shadow: 1px 2px 5px #213888;
+  -webkit-box-shadow: 1px 2px 5px #213888;
+  background-color: #F1F1F1;
+  word-wrap: break-word;
+}
+
+.comment p{
+  margin: 0 1%;
+}
+
+.comment a{
+  float: right;
+  margin: 0 1%;
+  font-size: 1em;
+}
+
+.comment_name{
+  display: inline-block;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+}
+
+.comment_text{
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.comment_body{
+  margin: 5% 2%;
+}
+
+.comment_time{
+  float: right;
+}
+
+.centrar{
+  margin: 0 40%;
+}
+
+.inputs{
+  width: 90%;
+}
+
+.textareas{
+  width: 90%;
+}
+
+.post_effect{
+  
+}
+
+textarea{
+  width: 70%;
+  resize: none;
+  text-decoration: none; 
+}
+
+@media all and (max-width: 768px) {
+  .header{
+    height: 150px;
+  }
+
+  header h1{
+    font-size: 5em;
+  }
+  aside {
+    display: inline-block;
+    width: 20%;
+    margin-right: 1%;
+    vertical-align: top;
+  }
+
+  .links{
+    margin: 1% 2%;
+    font-size: 1.5em;
+  }
+
+  section{
+    display: inline-block;
+    float: right;
+    width: 65%;
+    margin-top: 0.5%;
+    margin-right: 3%;
+    margin-left: 0;
+  }
+
+  .posts{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .header{
+    height: 100px;
+  }
+
+  .header_links{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    float: left;
+  }
+
+  .search{
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    display: block;
+  }
+
+  header h1{
+    font-size: 2em;
+  }
+  aside {
+    width: 94%;
+    margin: 2% 3%;
+  }
+
+  .links{
+    display: inline-block;
+  }
+
+  section{
+    display: block;
+    float: none;
+    width: 91.5%;
+    margin-left: 1%;
+  }
+
+  .comment{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 250px) {
+  .links{
+    display: block;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
