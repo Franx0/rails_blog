@@ -17,7 +17,7 @@ hr{
   position: relative;
   display: block;
   max-width: 100%;
-  height: 300px;
+  height: 200px;
   box-shadow: 0 0 10px 2px #545A75;
   -moz-box-shadow: 0 0 10px 2px #545A75;
   -webkit-box-shadow: 0 0 10px 2px #545A75;
@@ -109,12 +109,19 @@ header h1{
 ::-webkit-input-placeholder {
   color: #FFF;
 }
+
 aside{
   display: inline-block;
   float: left;
   width: 15%;
-  margin-top: 2%;
+  margin-top: 1.5%;
   margin-left: 3%;
+  margin-bottom: 5%;
+}
+
+aside div{
+  width: 100%;
+  padding: 3% 0;
   background-color: #9F9C9E;
   box-shadow: 5px 5px 10px 2px 1#C5C5C5;
   -moz-box-shadow: 5px 5px 10px 2px #C5C5C5;
@@ -123,10 +130,10 @@ aside{
 
 .links{
   display: block;
-  margin: 3%;
+  margin: 3% 7%;
   text-decoration: none;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #213888;
 }
 
@@ -134,10 +141,9 @@ section{
   display: inline-block;
   float: right;
   width: 75%;
-  padding-right: 3%;
   margin-top: 0.5%;
   margin-left: 1.5%;
-  margin-right: 1.5%;
+  margin-right: 3%;
   text-decoration: none
 }
 
@@ -150,7 +156,7 @@ section{
   float: left;
   display: inline-block;
   width: 45%;
-  margin-top: 2%;
+  margin-top: 1.4%;
   margin-left: 2%;
   padding: 0 1% 1% 2%;
   background-color: #F1F1F1;
@@ -306,7 +312,7 @@ section{
 }
 
 .field{
-  width: 35%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -316,14 +322,91 @@ textarea{
   text-decoration: none; 
 }
 
-@media all and (max-width: 768px) {
+.links_container{
+  float: left;
+  margin-top: 8%;
+}
+
+.links_container ul{
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.links_container ul li{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.links_container a{
+  text-decoration: none;
+  color: #000;
+}
+
+.links_container p{
+  position: relative;
+  right: -80%;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  color: #213888;
+}
+
+.links_images{
+  position: relative;
+  left: 25%;
+  display: inline-block;
+  transition-property: right 1s ease-in-out;
+  transition-duration: 1s, 1s;
+  transition-delay: 0s, 1s;
+  -webkit-transition-property: right 1s ease-in-out;
+  -webkit-transition-duration: 1s, 1s;
+  -webkit-transition-delay: 0s, 1s;
+  -moz-transition-property: right 1s ease-in-out;
+  -moz-transition-duration: 1s, 1s;
+  -moz-transition-delay: 0s, 1s;
+  width: 20%;
+  margin: 2% 0;
+  margin-left: 10%
+}
+
+.links_images:hover{
+  transition-property: left 1s ease-in-out;
+  transition-duration: 1s, 1s;
+  transition-delay: 0s, 1s;
+  -webkit-transition-property: left 1s ease-in-out;
+  -webkit-transition-duration: 1s, 1s;
+  -webkit-transition-delay: 0s, 1s;
+  -moz-transition-property: left 1s ease-in-out;
+  -moz-transition-duration: 1s, 1s;
+  -moz-transition-delay: 0s, 1s;
+  margin: 2% -20%;
+  margin-right: -50%;
+}
+
+footer{
+  display: block;
+  position: fixed;
+  bottom: 0;
+}
+
+@media all and (max-width: 815px) {
   .header{
     height: 150px;
+  }
+  
+  .search{
+    width: 60%;
   }
 
   header h1{
     font-size: 5em;
   }
+
   aside {
     display: inline-block;
     width: 20%;
@@ -332,8 +415,33 @@ textarea{
   }
 
   .links{
-    margin: 1% 2%;
+    margin: 1% 5%;
     font-size: 1.5em;
+  }
+
+  .links_container p{
+    display: none;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: "Alegreya Sans", sans-serif;
+  }
+
+  .links_images{
+    transition-property: none;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+  }
+  
+  .links_images:hover{
+    position: relative;
+    left: 25%;
+    display: inline-block;
+    transition-property: none;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    margin: 2% 0;
+    margin-left: 10%
+
   }
 
   section{
@@ -341,7 +449,7 @@ textarea{
     float: right;
     width: 65%;
     margin-top: 0.5%;
-    margin-right: 3%;
+    margin-right: 6%;
     margin-left: 0;
   }
 
@@ -372,6 +480,7 @@ textarea{
   header h1{
     font-size: 2em;
   }
+
   aside {
     width: 94%;
     margin: 2% 3%;
@@ -396,10 +505,33 @@ textarea{
     width: 70%;
     margin: 0 auto;
   }
+  
+  .links_container{
+    margin-top: 2%;
+    padding: 0;
+  }
+  
+  .links_container ul{
+    margin-top: 2%;
+  }
+
+  .links_container ul li{
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+  }
+
+  .links_images{
+    width: 40%;
+  }
 }
 
-@media all and (max-width: 250px) {
+@media all and (max-width: 300px) {
   .links{
     display: block;
+  }
+
+  .links_images{
+    width: 60%;
   }
 }

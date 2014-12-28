@@ -3,7 +3,7 @@
     <%= link_to post_path(post), :class => "noDecoration" do %>
         <div class = "posts">
             <h2 class = "title"><%= post.title %></h2>
-            <p class = "date">Submitted <%= time_ago_in_words(post.created_at) %> Ago</p>
+            <p class = "date">Submitted <%= time_ago_in_words(post.created_at) %> ago</p>
             <p class = "body text"><%= post.body %></p>
             <div class = "comments">
                 <h3><%= post.comments.count %> comments</h3>

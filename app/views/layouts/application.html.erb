@@ -18,28 +18,49 @@
     <% end %>
     </div>
   </header>
-  
+
   <% if current_page?(root_path) %>
-    <aside>
-      <%= link_to "All post", posts_path, :class => "links" %>
+  <aside>
+    <div>
+      <%= link_to "All posts", posts_path, :class => "links" %>
       <%= link_to "About me", about_path, :class => "links" %>
-    </aside>
-  <% elsif current_page?(posts_path) && user_signed_in? %>
+    </div>
+    <%= render 'shared/links_container' %>
+  </aside>
+  <% elsif current_page?(posts_path) %>
+    <% if user_signed_in? %>
     <aside>
-      <%= link_to "Home", root_path, :class => "links" %>
-      <%= link_to "About me", about_path, :class => "links" %>
-      <%= link_to "New post", new_post_path, :class => "links" %>
+      <div>
+        <%= link_to "Home", root_path, :class => "links" %>
+        <%= link_to "About me", about_path, :class => "links" %>
+        <%= link_to "New post", new_post_path, :class => "links" %>
+      </div>
+      <%= render 'shared/links_container' %>
     </aside>
+    <% else %>
+    <aside>
+      <div>
+        <%= link_to "Home", root_path, :class => "links" %>
+        <%= link_to "About me", about_path, :class => "links" %>
+      </div>
+      <%= render 'shared/links_container' %>
+    </aside>
+    <% end %>
   <% elsif current_page?(new_user_session_path) %>
   <% else %>
     <aside>
-      <%= link_to "Home", root_path, :class => "links" %>
-      <%= link_to "All post", posts_path, :class => "links" %>
+      <div>
+        <%= link_to "Home", root_path, :class => "links" %>
+        <%= link_to "All post", posts_path, :class => "links" %>
+      </div>
+      <%= render 'shared/links_container' %>
     </aside>
   <% end %>
-  
 
     <%= yield %>
-
+  
+  <footer>
+    &#169;Franx0
+  </footer>
 </body>
 </html>
