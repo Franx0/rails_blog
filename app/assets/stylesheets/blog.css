@@ -153,12 +153,12 @@ section{
 }
 
 .posts{
-  float: left;
+  float: right;
   display: inline-block;
   width: 45%;
   margin-top: 1.4%;
   margin-left: 2%;
-  padding: 0 1% 1% 2%;
+  padding: 0 0% 1% 2%;
   background-color: #F1F1F1;
   word-wrap: break-word;
 }
@@ -454,6 +454,7 @@ footer{
   }
 
   .posts{
+    float: none;
     width: 100%;
   }
 }
