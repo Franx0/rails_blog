@@ -1,8 +1,8 @@
-<% if target.errors.any? %>  
+<% if @post.comments.build.errors.any? %> 
 <div id = "errors">  
-  <h2><%= pluralize(target.errors.count, "error") %> prevented this post for saving</h2>  
+  <h2><%= pluralize(@post.comments.build.errors.count, "error") %> prevented this post for saving</h2>  
   <ul>  
-  <% target.errors.full_messages.each do |message| %>  
+  <% @post.comments.build.errors.full_messages.each do |message| %>  
     <li><%= message %></li>  
   <% end %>  
   </ul>  
