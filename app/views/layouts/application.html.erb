@@ -19,7 +19,7 @@
     </div>
   </header>
 
-  <% if current_page?(root_path) || current_page?(about_path) %>
+  <% if current_page?(root_path) %>
   <aside>
     <div>
       <%= link_to "All posts", posts_path, :class => "links" %>
@@ -30,19 +30,30 @@
   <% elsif current_page?(posts_path) %>
     <aside>
       <div>
-        <%= link_to "Home", root_path, :class => "links" %>
-        <%= link_to "About me", about_path, :class => "links" %>
-        <% if user_signed_in? %>
-        <%= link_to "New post", new_post_path, :class => "links" %>
-        <% end %>
+        <ul>
+          <li><%= link_to "Home", root_path, :class => "links" %></li>
+          <li><%= link_to "About me", about_path, :class => "links" %></li>
+          <% if user_signed_in? %>
+          <li><%= link_to "New post", new_post_path, :class => "links" %></li>
+          <% end %>
+        </ul>
       </div>
       <%= render 'shared/links_container' %>
     </aside>  
   <% elsif current_page?(new_user_session_path) %>
+  <% elsif current_page?(about_path) %>
+    <aside>
+      <div>
+        <%= link_to "Home", root_path, :class => "links" %>
+        <%= link_to "All posts", posts_path, :class => "links" %>
+        <%= render 'shared/links_container' %>
+      </div>
+    </aside>
   <% else %>
     <aside>
       <div>
         <%= link_to "Home", root_path, :class => "links" %>
+        <%= link_to "All posts", posts_path, :class => "links" %>
         <%= link_to "About me", about_path, :class => "links" %>
       </div>
     </aside>

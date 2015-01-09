@@ -128,9 +128,15 @@ aside div{
   -webkit-box-shadow: 5px 5px 10px 2px #C5C5C5;
 }
 
+aside ul{
+  padding-left: 5%;
+  list-style-type: none;
+  line-height: 2em;
+}
+
 .links{
   display: block;
-  margin: 3% 7%;
+  margin: 8% 7%;
   text-decoration: none;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5em;
@@ -142,10 +148,36 @@ section{
   display: inline-block;
   float: right;
   width: 75%;
+  padding-bottom: 2%;
   margin-top: 0.5%;
   margin-left: 1.5%;
   margin-right: 3%;
   text-decoration: none
+}
+
+.profile{
+  display: inline-block;
+  width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+}
+
+.profile img{
+  float: left;
+  width: 20%;
+  margin: 2% 5% 0 0.5%;
+  border-radius: 50% 50%;
+}
+
+.profile p{
+    float: right;
+    width: 74%;
+}
+
+.inline{
+  float: right;
+  width: 74%;
+  vertical-align: top;
 }
 
 .posts{
@@ -239,6 +271,7 @@ h2 p{
   font-size: 1em;
   color: #000;
   text-align: justify;
+  line-height: 2em;
 }
 
 .comments{
@@ -249,6 +282,7 @@ h2 p{
   margin-top: 2%;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
+  color: #000;
   background-color: #FFF;
 }
 
@@ -322,7 +356,7 @@ h2 p{
 }
 
 .field{
-  width: 75%;
+  width: 95%;
   margin: 1% auto;
 }
 
@@ -362,7 +396,7 @@ textarea{
   bottom: 20%;
   right: -80%;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: super;
   text-decoration: none;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
@@ -428,7 +462,7 @@ footer{
   }
 
   .links{
-    margin: 1% 5%;
+    margin: 8% 5%;
     font-size: 1.5em;
   }
 
@@ -465,6 +499,11 @@ footer{
     margin-right: 6%;
     margin-left: 0;
   }
+    
+  .profile p{
+    float: right;
+    width: 100%;
+  }
 
   .posts{
     float: none;
@@ -500,8 +539,22 @@ footer{
     margin: 2% 3%;
   }
 
+   aside div{
+    text-align: center;
+  }
+
+  aside ul{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  aside li{
+    display: inline;
+  }
+
   .links{
     display: inline-block;
+    margin: 0 5%;
   }
 
   section{
@@ -509,6 +562,16 @@ footer{
     float: none;
     width: 91.5%;
     margin-left: 1%;
+  }
+  
+  .profile img{
+    float: none;
+    width: 30%;
+    margin: 2% 35%;
+  }
+
+  .inline{
+    float: none;
   }
 
   .comment{
@@ -530,9 +593,10 @@ footer{
   }
 
   .links_container ul li{
+    float: left;
     display: inline-block;
     width: 20%;
-    margin: 0;
+    margin: 0 1%;
   }
 
   .links_images{
@@ -541,11 +605,30 @@ footer{
 }
 
 @media all and (max-width: 300px) {
-  .links{
-    display: block;
+  
+  .links{ 
+    font-size: 1em;
   }
 
   .links_images{
     width: 60%;
+  }
+  
+  .links_container ul li{
+    overflow: visible;
+  }
+  aside div{
+    text-align: center;
+  }
+
+  aside ul{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  aside a{
+    display: inline;
+    width: 20%;
   }
 }
