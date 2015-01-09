@@ -439,6 +439,22 @@ footer{
   display: block;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  padding: 0 5%;
+  background-color: #3F3E3E;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  color: #FFF;
+}
+
+footer div{
+  float: right;
+  margin-right: 10%;
+}
+
+footer a{
+  text-decoration: none;
+  color: #FFF;
 }
 
 @media all and (max-width: 815px) {
