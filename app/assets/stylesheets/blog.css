@@ -198,6 +198,17 @@ h2 p{
   margin: 1% 0%;
 }
 
+.video{
+  width: 60%;
+  height: 21em;
+  margin: 0 auto;
+}
+
+.audio{
+  width: 100%;
+  height: 3%;
+}
+
 .date{
   margin: 2% 0;
   font-family: "Yanone Kaffeesatz", sans-serif;

@@ -3,8 +3,11 @@
         <h2 class = "title"><%= simple_format h(@post.title) %></h2>
         <p class = "date">Created <%= (@post.created_at.to_formatted_s(:long_ordinal)) %></p>
         <p class = "body read"><%=simple_format h(@post.body) %></p>
-        <% if @post.video !== nil %>
-        <iframe width="560" height="315" src="#{@post.video}" frameborder="0" allowfullscreen></iframe>
+        <% if !@post.video.blank? %>
+        <iframe class = "video" src = <%= @post.video %> frameborder="0" allowfullscreen></iframe>
+        <% end %>
+        <% if !@post.audio.blank? %>
+        <iframe class = "audio" scrolling = "no" frameborder = "no" src = <%= @post.audio %>></iframe>
         <% end %>
         <% if user_signed_in? %>
             <%= link_to "Delete Post", post_path(@post), method: :delete, :class => "links post_links" %>
