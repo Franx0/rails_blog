@@ -5,6 +5,6 @@ class Post < ActiveRecord::Base
     validates :category, presence: true
 
     def self.search(search)
-        where("category LIKE ?", "%#{search.downcase}%")
+        where("title LIKE ?", "%#{search.downcase}%")
     end
 end
