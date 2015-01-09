@@ -1,6 +1,6 @@
 <section>
 <% @post.each do |post| %>
-    <%= link_to post_path(post), :class => "noDecoration" do %>
+    <%= link_to post_path(post) do %>
         <div class = "posts">
             <h2 class = "title"><%= post.title %></h2>
             <p class = "date">Submitted <%= time_ago_in_words(post.created_at) %> ago</p>
