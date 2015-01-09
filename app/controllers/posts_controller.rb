@@ -5,7 +5,7 @@ class PostsController < ApplicationController
         if params[:search]
             @post = Post.search(params[:search])
         else
-            @post = Post.all
+            @post = Post.last(4)
         end
     end
 
