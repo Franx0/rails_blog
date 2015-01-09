@@ -62,7 +62,7 @@ header h1{
   display: inline-block;
   position: absolute;
   bottom: 2%;
-  right: 1%;
+  right: 2%;
   width: 50%;
   border-radius: 0.5em:;
   -moz-border-radius: 0.5em;
@@ -128,12 +128,19 @@ aside div{
   -webkit-box-shadow: 5px 5px 10px 2px #C5C5C5;
 }
 
+aside ul{
+  padding-left: 5%;
+  list-style-type: none;
+  line-height: 2em;
+}
+
 .links{
   display: block;
-  margin: 3% 7%;
+  margin: 8% 7%;
   text-decoration: none;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5em;
+  font-weight: bold;
   color: #213888;
 }
 
@@ -141,15 +148,36 @@ section{
   display: inline-block;
   float: right;
   width: 75%;
+  padding-bottom: 2%;
   margin-top: 0.5%;
   margin-left: 1.5%;
   margin-right: 3%;
   text-decoration: none
 }
 
-.noDecoration{
-  text-decoration: none;
-  color: #000;
+.profile{
+  display: inline-block;
+  width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+}
+
+.profile img{
+  float: left;
+  width: 20%;
+  margin: 2% 5% 0 0.5%;
+  border-radius: 50% 50%;
+}
+
+.profile p{
+    float: right;
+    width: 74%;
+}
+
+.inline{
+  float: right;
+  width: 74%;
+  vertical-align: top;
 }
 
 .posts{
@@ -198,10 +226,26 @@ section{
   color: #213888;
 }
 
+h2 p{
+  margin: 1% 0%;
+}
+
+.video{
+  width: 60%;
+  height: 21em;
+  margin: 0 auto;
+}
+
+.audio{
+  width: 100%;
+  height: 3%;
+}
+
 .date{
   margin: 2% 0;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1em;
+  color: #000;
 }
 
 .body{
@@ -225,9 +269,14 @@ section{
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
   font-size: 1em;
+  color: #000;
   text-align: justify;
+  line-height: 2em;
 }
 
+.text h2{
+  margin: 0 auto;
+}
 .comments{
   float: right;
   display: inline-block;
@@ -236,6 +285,7 @@ section{
   margin-top: 2%;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
+  color: #000;
   background-color: #FFF;
 }
 
@@ -301,10 +351,6 @@ section{
   width: 90%;
 }
 
-.textareas{
-  width: 90%;
-}
-
 .log{
   width: 94%;
   margin: 1% 3% 0 3%;
@@ -313,12 +359,16 @@ section{
 }
 
 .field{
-  width: 75%;
-  margin: 0 auto;
+  width: 95%;
+  margin: 1% auto;
+}
+
+.login_field{
+  width: 30%;
 }
 
 textarea{
-  width: 70%;
+  width: 90%;
   resize: none;
   text-decoration: none; 
 }
@@ -350,10 +400,13 @@ textarea{
 
 .links_container p{
   position: relative;
+  bottom: 20%;
   right: -80%;
   display: inline-block;
+  vertical-align: super;
   text-decoration: none;
   font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
   color: #213888;
 }
 
@@ -393,6 +446,22 @@ footer{
   display: block;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  padding: 0 5%;
+  background-color: #3F3E3E;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  color: #FFF;
+}
+
+footer div{
+  float: right;
+  margin-right: 10%;
+}
+
+footer a{
+  text-decoration: none;
+  color: #FFF;
 }
 
 @media all and (max-width: 815px) {
@@ -416,7 +485,7 @@ footer{
   }
 
   .links{
-    margin: 1% 5%;
+    margin: 8% 5%;
     font-size: 1.5em;
   }
 
@@ -453,6 +522,11 @@ footer{
     margin-right: 6%;
     margin-left: 0;
   }
+    
+  .profile p{
+    float: right;
+    width: 100%;
+  }
 
   .posts{
     float: none;
@@ -488,8 +562,22 @@ footer{
     margin: 2% 3%;
   }
 
+   aside div{
+    text-align: center;
+  }
+
+  aside ul{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  aside li{
+    display: inline;
+  }
+
   .links{
     display: inline-block;
+    margin: 0 5%;
   }
 
   section{
@@ -497,6 +585,16 @@ footer{
     float: none;
     width: 91.5%;
     margin-left: 1%;
+  }
+  
+  .profile img{
+    float: none;
+    width: 30%;
+    margin: 2% 35%;
+  }
+
+  .inline{
+    float: none;
   }
 
   .comment{
@@ -518,9 +616,10 @@ footer{
   }
 
   .links_container ul li{
+    float: left;
     display: inline-block;
     width: 20%;
-    margin: 0;
+    margin: 0 1%;
   }
 
   .links_images{
@@ -529,12 +628,31 @@ footer{
 }
 
 @media all and (max-width: 300px) {
-  .links{
-    display: block;
+  
+  .links{ 
+    font-size: 1em;
   }
 
   .links_images{
     width: 60%;
+  }
+  
+  .links_container ul li{
+    overflow: visible;
+  }
+  aside div{
+    text-align: center;
+  }
+
+  aside ul{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  aside a{
+    display: inline;
+    width: 20%;
   }
 }
 /*

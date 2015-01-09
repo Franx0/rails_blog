@@ -274,6 +274,9 @@ h2 p{
   line-height: 2em;
 }
 
+.text h2{
+  margin: 0 auto;
+}
 .comments{
   float: right;
   display: inline-block;
@@ -358,6 +361,10 @@ h2 p{
 .field{
   width: 95%;
   margin: 1% auto;
+}
+
+.login_field{
+  width: 30%;
 }
 
 textarea{
