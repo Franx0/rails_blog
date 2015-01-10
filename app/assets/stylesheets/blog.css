@@ -1,5 +1,3 @@
-@import "url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Boogaloo)";
-
 body{
   width: 100%;
   height: 100%;
@@ -675,6 +673,10 @@ footer a{
   aside a{
     display: inline;
     width: 25%;
+  }
+  
+  footer{
+    position: relative;
   }
 
   footer div{
