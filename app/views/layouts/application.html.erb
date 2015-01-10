@@ -46,8 +46,8 @@
       <div>
         <%= link_to "Home", root_path, :class => "links" %>
         <%= link_to "All posts", posts_path, :class => "links" %>
-        <%= render 'shared/links_container' %>
       </div>
+      <%= render 'shared/links_container' %>
     </aside>
   <% else %>
     <aside>
@@ -62,10 +62,9 @@
     <%= yield %>
   
   <footer>
-      &#169;Franx0  
-      <div>Email:
-        <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=francisco.moya.martinez@gmail.com" target = "_blanck">francisco.moya.martinez@gmail.com</a>
-      </div>
+      <div>&#169;Franx0</div>  
+      Email:
+      <a href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=francisco.moya.martinez@gmail.com" target = "_blanck">francisco.moya.martinez@gmail.com</a>
   </footer>
 </body>
 </html>
