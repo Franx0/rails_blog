@@ -637,7 +637,7 @@ footer a{
   }
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 305px) {
   
   header h1{
     font-size: 2em;
