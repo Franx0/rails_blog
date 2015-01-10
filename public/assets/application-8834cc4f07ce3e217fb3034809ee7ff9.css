@@ -152,9 +152,7 @@ section{
   float: right;
   width: 75%;
   padding-bottom: 2%;
-  margin-top: 0.5%;
-  margin-left: 1.5%;
-  margin-right: 3%;
+  margin: 0.5% 3% 3.5% 1.5%;
   text-decoration: none
 }
 
@@ -518,11 +516,8 @@ footer a{
   }
 
   section{
-    display: inline-block;
-    float: right;
     width: 65%;
-    margin-top: 0.5%;
-    margin-right: 7.4%;
+    margin-right: 5.5%;
     margin-left: 0;
   }
     
@@ -590,8 +585,9 @@ footer a{
   section{
     display: block;
     float: none;
-    width: 91.5%;
+    width: 94%;
     margin-left: 1%;
+    margin-bottom: 5%;
   }
   
   .profile img{
@@ -618,11 +614,12 @@ footer a{
   
   .links_container{
     margin-top: 2%;
+    margin-bottom: 1%;
     padding: 0;
   }
   
   .links_container ul{
-    margin-top: 2%;
+    margin-top: 4%;
   }
 
   .links_container ul li{
@@ -635,6 +632,10 @@ footer a{
   .links_images{
     width: 40%;
   }
+
+  footer div{
+    display: none;
+  }
 }
 
 @media all and (max-width: 305px) {
@@ -643,6 +644,10 @@ footer a{
     font-size: 2em;
   }
   
+  section{
+    width: 91.5%;
+  }
+
   .posts{
     width: 100%;
     padding-right: 1%;
@@ -650,9 +655,7 @@ footer a{
 
   .links{ 
     width: 40%;
-    font-size: 0.9em;
-    -webkit-font-size: 1.3em;
-    moz-font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0 2%;
   }
 
@@ -680,10 +683,6 @@ footer a{
   
   footer{
     display: none;
-  }
-
-  footer div{
-    float: left;
   }
 }
 /*
