@@ -652,7 +652,7 @@ footer a{
     width: 40%;
     font-size: 0.9em;
     -webkit-font-size: 1.3em;
-    moz-font-size: 1.3em;
+    -moz-font-size: 1.3em;
     margin: 0 2%;
   }
 
