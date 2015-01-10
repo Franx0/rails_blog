@@ -5,7 +5,7 @@ class PostsController < ApplicationController
         if params[:search]
             @post = Post.search(params[:search])
         else
-            @post = Post.order(:created_at).limit(4)
+            @post = Post.order("posts.created_at DESC").limit(4)
         end
     end
 
@@ -24,7 +24,7 @@ class PostsController < ApplicationController
     end
 
     def show
-        @post = Post.find(params[:id])
+        @post = Post.order("posts.created_at DESC")
         @comment = @post.comments
     end
 
