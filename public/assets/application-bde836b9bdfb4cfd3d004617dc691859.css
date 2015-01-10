@@ -1,3 +1,5 @@
+@import "url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Boogaloo)";
+
 body{
   width: 100%;
   height: 100%;
@@ -23,6 +25,9 @@ hr{
   -webkit-box-shadow: 0 0 10px 2px #545A75;
   background-color: #545A75;
   background-image: url("header.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 }
 
 .header_links{
@@ -64,7 +69,7 @@ header h1{
   bottom: 2%;
   right: 2%;
   width: 50%;
-  border-radius: 0.5em:;
+  border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -519,7 +524,7 @@ footer a{
     float: right;
     width: 65%;
     margin-top: 0.5%;
-    margin-right: 6%;
+    margin-right: 7.4%;
     margin-left: 0;
   }
     
@@ -538,6 +543,10 @@ footer a{
   .header{
     height: 100px;
   }
+  
+  header h1{
+    font-size: 3em;
+  }
 
   .header_links{
     position: absolute;
@@ -554,7 +563,7 @@ footer a{
   }
 
   header h1{
-    font-size: 2em;
+    font-size: 3em;
   }
 
   aside {
@@ -596,7 +605,10 @@ footer a{
   .inline{
     float: none;
   }
-
+  
+  .posts{
+    width: 98%;
+  }
   .comment{
     width: 100%;
   }
@@ -629,8 +641,18 @@ footer a{
 
 @media all and (max-width: 300px) {
   
+  header h1{
+    font-size: 2em;
+  }
+  
+  .posts{
+    width: 100%;
+    padding-right: 1%;
+  }
+
   .links{ 
-    font-size: 1em;
+    font-size: 0.8em;
+    margin: 0 2%;
   }
 
   .links_images{
@@ -652,7 +674,11 @@ footer a{
 
   aside a{
     display: inline;
-    width: 20%;
+    width: 25%;
+  }
+
+  footer div{
+    float: left;
   }
 }
 /*
