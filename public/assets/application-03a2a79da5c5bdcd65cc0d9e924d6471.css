@@ -84,7 +84,7 @@ header h1{
 }
 
 .submit{
-  border-radius: 0.5em:;
+  border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -649,7 +649,10 @@ footer a{
   }
 
   .links{ 
-    font-size: 1em;
+    width: 40%;
+    font-size: 0.9em;
+    -webkit-font-size: 1.3em;
+    -moz-font-size: 1.3em;
     margin: 0 2%;
   }
 
