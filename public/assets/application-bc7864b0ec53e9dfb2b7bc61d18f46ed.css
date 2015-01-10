@@ -67,7 +67,7 @@ header h1{
   bottom: 2%;
   right: 2%;
   width: 50%;
-  border-radius: 0.5em:;
+  border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -642,9 +642,15 @@ footer a{
   header h1{
     font-size: 2em;
   }
+  
+  .posts{
+    width: 100%;
+    padding-right: 1%;
+  }
 
   .links{ 
     font-size: 0.8em;
+    margin: 0 2%;
   }
 
   .links_images{
@@ -667,6 +673,14 @@ footer a{
   aside a{
     display: inline;
     width: 25%;
+  }
+  
+  footer{
+    position: relative;
+  }
+
+  footer div{
+    float: left;
   }
 }
 /*
