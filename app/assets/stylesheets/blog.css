@@ -23,6 +23,9 @@ hr{
   -webkit-box-shadow: 0 0 10px 2px #545A75;
   background-color: #545A75;
   background-image: url("header.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 }
 
 .header_links{
@@ -519,7 +522,7 @@ footer a{
     float: right;
     width: 65%;
     margin-top: 0.5%;
-    margin-right: 6%;
+    margin-right: 7.4%;
     margin-left: 0;
   }
     
@@ -538,6 +541,10 @@ footer a{
   .header{
     height: 100px;
   }
+  
+  header h1{
+    font-size: 3em;
+  }
 
   .header_links{
     position: absolute;
@@ -554,7 +561,7 @@ footer a{
   }
 
   header h1{
-    font-size: 2em;
+    font-size: 3em;
   }
 
   aside {
@@ -596,7 +603,10 @@ footer a{
   .inline{
     float: none;
   }
-
+  
+  .posts{
+    width: 98%;
+  }
   .comment{
     width: 100%;
   }
@@ -629,8 +639,12 @@ footer a{
 
 @media all and (max-width: 300px) {
   
+  header h1{
+    font-size: 2em;
+  }
+
   .links{ 
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .links_images{
@@ -652,6 +666,6 @@ footer a{
 
   aside a{
     display: inline;
-    width: 20%;
+    width: 25%;
   }
 }
