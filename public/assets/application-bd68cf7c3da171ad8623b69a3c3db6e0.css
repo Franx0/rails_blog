@@ -152,9 +152,7 @@ section{
   float: right;
   width: 75%;
   padding-bottom: 2%;
-  margin-top: 0.5%;
-  margin-left: 1.5%;
-  margin-right: 3%;
+  margin: 0.5% 3% 3.5% 1.5%;
   text-decoration: none
 }
 
@@ -189,7 +187,7 @@ section{
   width: 45%;
   margin-top: 1.4%;
   margin-left: 2%;
-  padding: 0 0% 1% 2%;
+  padding: 0 0 1% 2%;
   background-color: #F1F1F1;
   word-wrap: break-word;
 }
@@ -285,7 +283,7 @@ h2 p{
   display: inline-block;
   width: 97%;
   padding-left: 1%;
-  margin-top: 2%;
+  margin-top: 3%;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 300;
   color: #000;
@@ -518,10 +516,7 @@ footer a{
   }
 
   section{
-    display: inline-block;
-    float: right;
     width: 65%;
-    margin-top: 0.5%;
     margin-right: 5.5%;
     margin-left: 0;
   }
@@ -592,6 +587,7 @@ footer a{
     float: none;
     width: 94%;
     margin-left: 1%;
+    margin-bottom: 5%;
   }
   
   .profile img{
@@ -638,7 +634,7 @@ footer a{
   }
 
   footer div{
-    float: left;
+    display: none;
   }
 }
 
@@ -654,7 +650,7 @@ footer a{
 
   .posts{
     width: 100%;
-    padding-right: 1%;
+    margin-left: 2.5%;
   }
 
   .links{ 
