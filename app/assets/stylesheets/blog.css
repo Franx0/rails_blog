@@ -243,7 +243,7 @@ h2 p{
 }
 
 .date{
-  margin: 2% 0;
+  margin: 2% 2%;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1em;
   color: #000;
@@ -252,7 +252,7 @@ h2 p{
 .body{
   height: 4.5em;
   overflow: hidden;
-  margin: 3% 0 0 0;
+  margin: 3% 1% 0 0;
   font-size: 1em;
   background-color: #F1F1F1;
 }
@@ -276,7 +276,7 @@ h2 p{
 }
 
 .text h2{
-  margin: 0 auto;
+  margin: 0 1%;
 }
 .comments{
   float: right;
@@ -520,7 +520,11 @@ footer a{
     margin-right: 5.5%;
     margin-left: 0;
   }
-    
+  
+  .text{
+    padding-right: 0;
+  }
+
   .profile p{
     float: right;
     width: 100%;
