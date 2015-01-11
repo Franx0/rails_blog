@@ -187,7 +187,7 @@ section{
   width: 45%;
   margin-top: 1.4%;
   margin-left: 2%;
-  padding: 0 0% 1% 2%;
+  padding: 0 0 1% 2%;
   background-color: #F1F1F1;
   word-wrap: break-word;
 }
@@ -650,7 +650,7 @@ footer a{
 
   .posts{
     width: 100%;
-    padding-right: 1%;
+    margin-left: 2.5%;
   }
 
   .links{ 
