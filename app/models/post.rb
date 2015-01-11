@@ -4,6 +4,7 @@ class Post < ActiveRecord::Base
     validates :body, presence: true
     validates :category, presence: true
     default_scope { order("created_at DESC") }
+    
     def self.search(search)
         where("LOWER (title) LIKE ? OR LOWER (body) LIKE ?", "%#{search.downcase}%", "%#{search.downcase}%")
     end

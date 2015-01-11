@@ -25,7 +25,7 @@
       <%= link_to "All posts", posts_path, :class => "links" %>
       <%= link_to "About me", about_path, :class => "links" %>
     </div>
-    <%= render 'shared/links_container' %>
+    <%= render "shared/links_container" %>
   </aside>
   <% elsif current_page?(posts_path) %>
     <aside>
@@ -38,7 +38,7 @@
           <% end %>
         </ul>
       </div>
-      <%= render 'shared/links_container' %>
+      <%= render "shared/links_container" %>
     </aside>  
   <% elsif current_page?(new_user_session_path) %>
   <% elsif current_page?(about_path) %>
@@ -47,7 +47,7 @@
         <%= link_to "Home", root_path, :class => "links" %>
         <%= link_to "All posts", posts_path, :class => "links" %>
       </div>
-      <%= render 'shared/links_container' %>
+      <%= render "shared/links_container" %>
     </aside>
   <% else %>
     <aside>
