@@ -530,6 +530,10 @@ footer a{
     float: none;
     width: 100%;
   }
+
+  .unique{
+    width: 103%;
+  }
 }
 
 @media all and (max-width: 550px) {
@@ -603,6 +607,11 @@ footer a{
   .posts{
     width: 98%;
   }
+
+  .unique{
+    width: 100%;
+  } 
+
   .comment{
     width: 100%;
   }
@@ -651,6 +660,10 @@ footer a{
   .posts{
     width: 100%;
     margin-left: 2.5%;
+  }
+
+  .unique{
+    width:102%;
   }
 
   .links{ 
