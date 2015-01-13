@@ -528,7 +528,7 @@ footer a{
 
   .posts{
     float: none;
-    width: 103%;
+    width: 100%;
   }
 }
 
@@ -601,7 +601,7 @@ footer a{
   }
   
   .posts{
-    width: 101%;
+    width: 98%;
   }
   .comment{
     width: 100%;
@@ -650,7 +650,7 @@ footer a{
 
   .posts{
     width: 100%;
-    margin-left: 2%;
+    margin-left: 2.5%;
   }
 
   .links{ 
