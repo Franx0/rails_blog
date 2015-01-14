@@ -225,6 +225,7 @@ section{
   font-weight: 400;
   font-size: 30px;
   color: #213888;
+  overflow: hidden;
 }
 
 h2 p{
