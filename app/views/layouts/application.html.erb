@@ -22,8 +22,13 @@
   <% if current_page?(root_path) %>
   <aside>
     <div>
-      <%= link_to "All posts", posts_path, :class => "links" %>
-      <%= link_to "About me", about_path, :class => "links" %>
+      <ul>
+        <li><%= link_to "All posts", posts_path, :class => "links" %></li>
+        <li><%= link_to "About me", about_path, :class => "links" %></li>
+        <% if user_signed_in? %>
+        <li><%= link_to "New post", new_post_path, :class => "links" %></li>
+        <% end %>
+      </ul>
     </div>
     <%= render "shared/links_container" %>
   </aside>
@@ -44,16 +49,20 @@
   <% elsif current_page?(about_path) %>
     <aside>
       <div>
-        <%= link_to "Home", root_path, :class => "links" %>
-        <%= link_to "All posts", posts_path, :class => "links" %>
+        <ul>
+          <li><%= link_to "Home", root_path, :class => "links" %></li>
+          <li><%= link_to "All posts", posts_path, :class => "links" %></li>
+        </ul>
       </div>
       <%= render "shared/links_container" %>
     </aside>
   <% else %>
     <aside>
       <div>
-        <%= link_to "Home", root_path, :class => "links" %>
-        <%= link_to "All posts", posts_path, :class => "links" %>
+        <ul>
+          <li><%= link_to "Home", root_path, :class => "links" %></li>
+          <li><%= link_to "All posts", posts_path, :class => "links" %></li>
+        </ul>
       </div>
     </aside>
   <% end %>
