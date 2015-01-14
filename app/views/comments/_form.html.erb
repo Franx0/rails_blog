@@ -6,10 +6,12 @@
 
     <p>
         <%= f.label :write_your_comment %></br>
-        <%= f.text_area :body, :class => "comment_text" %>
+        <%= f.text_area :body, :class => "comment_text", :id => "comment_area" %>
     </p>
 
     <p>
         <%= f.submit "Create your comment", :class => "comment_text submit" %>
     </p>
 <% end %>
+
+<div id="number_count"></div>

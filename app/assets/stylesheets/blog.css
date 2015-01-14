@@ -281,6 +281,7 @@ h2 p{
   margin: 0 1%;
 }
 .comments{
+  position: relative;
   float: right;
   display: inline-block;
   width: 97%;
@@ -344,6 +345,12 @@ h2 p{
 
 .comment_time{
   float: right;
+}
+
+#number_count{
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
 }
 
 .centrar{
