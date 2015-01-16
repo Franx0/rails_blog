@@ -8,4 +8,8 @@ class Post < ActiveRecord::Base
     def self.search(search)
         where("LOWER (title) LIKE ? OR LOWER (body) LIKE ?", "%#{search.downcase}%", "%#{search.downcase}%")
     end
+
+    def to_param
+        "#{id}-#{title.parameterize}"
+    end
 end
