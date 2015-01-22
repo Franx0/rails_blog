@@ -278,8 +278,12 @@ h2 p{
 }
 
 .text h2{
+  height: auto;
   margin: 0 1%;
+  margin-bottom: 2%;
+  overflow: hidden;
 }
+
 .comments{
   position: relative;
   float: right;
