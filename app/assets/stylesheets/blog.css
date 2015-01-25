@@ -284,6 +284,10 @@ h2 p{
   overflow: hidden;
 }
 
+.log h2{
+  margin: 0 auto;
+}
+
 .comments{
   position: relative;
   float: right;

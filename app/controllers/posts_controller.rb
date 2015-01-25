@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
     before_action :authenticate_user!, except: [:index, :show, :all_posts]
-
+    
     def index
         if params[:search]
             @post = Post.search(params[:search])
