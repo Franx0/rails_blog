@@ -1,8 +1,8 @@
 <section>
     <div class = "posts read text"> 
-        <h2 class = "title"><%= simple_format h(@post.title) %></h2>
+        <h2 class = "title"><%= simple_format (h(@post.title)) %></h2>
         <p class = "date">Created <%= (@post.created_at.to_formatted_s(:long_ordinal)) %></p>
-        <div class = "body read"><%=simple_format h(@post.body) %></div>
+        <div class = "body read"><%=simple_format (h(raw @post.body)) %></div>
         <% if !@post.video.blank? %>
         <iframe class = "video" src = <%= @post.video %> frameborder="0" allowfullscreen></iframe>
         <% end %>

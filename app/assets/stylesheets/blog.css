@@ -13,6 +13,18 @@ hr{
   border: 0.05em solid #213888;
 }
 
+pre{
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  font-family: "Ubuntu Mono";
+  font-size: 10;
+  color: #FFF;
+  background-color: #303030;
+}
+
 .header{
   position: relative;
   display: block;
