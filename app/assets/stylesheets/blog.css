@@ -678,6 +678,10 @@ footer a{
   .links_images{
     width: 40%;
   }
+  
+  pre{
+  font-size: 0.5em;   
+  }
 
   footer div{
     display: none;
@@ -731,6 +735,9 @@ footer a{
     width: 25%;
   }
   
+  pre{
+  font-size: 0.25em;   
+  }
   footer{
     display: none;
   }
