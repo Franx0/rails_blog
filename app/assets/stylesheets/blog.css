@@ -15,15 +15,22 @@ hr{
 
 pre{
   width: 90%;
+  height: auto;
   margin: 0 auto;
   border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   font-family: "Ubuntu Mono";
-  font-size: 2;
+  font-size: 1em;
   line-height: 80%;
   color: #FFF;
   background-color: #303030;
+  white-space: pre-wrap;       
+  white-space: -moz-pre-wrap;  
+  white-space: -pre-wrap;      
+  white-space: -o-pre-wrap;    
+  word-wrap: break-word;  
+  overflow: auto;   
 }
 
 .header{
