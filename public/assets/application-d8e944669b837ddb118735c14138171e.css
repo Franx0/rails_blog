@@ -1,0 +1,753 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header{
+  padding: 1% 3% 0 3%;
+}
+
+hr{
+  margin: 0;
+  border: 0.05em solid #213888;
+}
+
+pre{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  font-family: "Ubuntu Mono";
+  font-size: 1em;
+  line-height: 80%;
+  color: #FFF;
+  background-color: #303030;
+  white-space: pre-wrap;       
+  white-space: -moz-pre-wrap;  
+  white-space: -pre-wrap;      
+  white-space: -o-pre-wrap;    
+  word-wrap: break-word;  
+  overflow: auto;   
+}
+
+.header{
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: 230px;
+  box-shadow: 0 0 10px 2px #545A75;
+  -moz-box-shadow: 0 0 10px 2px #545A75;
+  -webkit-box-shadow: 0 0 10px 2px #545A75;
+  background-color: #545A75;
+  background-image: url("header.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
+.header_links{
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5em;
+  color: #FFF; 
+}
+
+header h1{
+  position: absolute;
+  top: 0;
+  left: 5%;
+  margin: 0;
+  text-shadow: -1px 0 #545A75, 2px 0 #545A75, 0 2px #545A75, 0 -1px #545A75;
+  -moz-text-shadow: -1px 0 #545A75, 2px 0 #545A75, 0 2px #545A75, 0 -1px #545A75;
+  -webkit-text-shadow: -1px 0 #545A75, 2px 0 #545A75, 0 2px #545A75, 0 -1px #545A75;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 8em;
+  color: #FFF;
+}
+
+
+.search:focus{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+  color: #FFF;
+  outline: none;
+}
+
+.search{
+  display: inline-block;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 50%;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+  color: #FFF;
+  border-color: solid #FFF;
+  background-color: transparent;
+}
+
+.submit_position{
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+}
+
+.submit{
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+  border-color: #FFF;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+::-moz-placeholder {
+  color: #FFF;
+}
+
+:moz-placeholder{
+  color: #FFF;
+}
+
+:ms-input-placeholder{
+  color: #FFF;
+}
+
+::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+aside{
+  display: inline-block;
+  float: left;
+  width: 15%;
+  margin-top: 1.5%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+}
+
+aside div{
+  width: 100%;
+  padding: 3% 0;
+  background-color: #9F9C9E;
+  box-shadow: 5px 5px 10px 2px 1#C5C5C5;
+  -moz-box-shadow: 5px 5px 10px 2px #C5C5C5;
+  -webkit-box-shadow: 5px 5px 10px 2px #C5C5C5;
+}
+
+aside ul{
+  padding-left: 5%;
+  list-style-type: none;
+  line-height: 2em;
+}
+
+.links{
+  display: block;
+  margin: 8% 7%;
+  text-decoration: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #213888;
+}
+
+section{
+  display: inline-block;
+  float: right;
+  width: 75%;
+  padding-bottom: 2%;
+  margin: 0.5% 3% 3.5% 1.5%;
+  text-decoration: none
+}
+
+.profile{
+  display: inline-block;
+  width: 100%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+}
+
+.profile img{
+  float: left;
+  width: 20%;
+  margin: 2% 5% 0 0.5%;
+  border-radius: 50% 50%;
+}
+
+.profile p{
+    float: right;
+    width: 74%;
+}
+
+.inline{
+  float: right;
+  width: 74%;
+  vertical-align: top;
+}
+
+.posts{
+  float: right;
+  display: inline-block;
+  width: 45%;
+  margin-top: 1.4%;
+  margin-left: 2%;
+  padding: 0 0 1% 2%;
+  background-color: #F1F1F1;
+  word-wrap: break-word;
+}
+
+.posts:hover{
+  position: relative;
+  left: 1%;
+  box-shadow: 5px 5px 10px 2px #C5C5C5;
+  -moz-box-shadow: 5px 5px 10px 2px #C5C5C5;
+  -webkit-box-shadow: 5px 5px 10px 2px #C5C5C5;
+}
+
+.read:hover{
+  position: relative;
+  left: 0;
+  box-shadow: 0 0 #C5C5C5;
+  -moz-box-shadow: 0 0 #C5C5C5;
+  -webkit-box-shadow: 0 0 #C5C5C5;
+}
+
+.post_links{
+  right: 1%;
+  bottom: 1%;
+  float: right;
+  font-size: 1em;
+}
+
+.posts a{
+  margin: 0 1%;
+}
+
+.title{
+  height: 1.4em;
+  margin: 1% auto;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #213888;
+  overflow: hidden;
+}
+
+h2 p{
+  margin: 1% 0%;
+}
+
+.video{
+  width: 60%;
+  height: 21em;
+  margin: 0 auto;
+}
+
+.audio{
+  width: 100%;
+  height: 3%;
+}
+
+.date{
+  margin: 2% 2%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+  color: #000;
+}
+
+.body{
+  height: 4.5em;
+  overflow: hidden;
+  margin: 3% 1% 0 0;
+  font-size: 1em;
+  background-color: #F1F1F1;
+}
+
+.read{
+  overflow: visible;
+  height: auto;
+  width: 97%;
+  background-color: #F1F1F1;
+}
+
+.text{
+  padding-right: 3%;
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #000;
+  text-align: justify;
+  line-height: 2em;
+}
+
+.text h2{
+  height: auto;
+  margin: 0 1%;
+  margin-bottom: 2%;
+  overflow: hidden;
+}
+
+.log h2{
+  margin: 0 auto;
+}
+
+.comments{
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 97%;
+  padding-left: 1%;
+  margin-top: 3%;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  color: #000;
+  background-color: #FFF;
+}
+
+.comments h3{
+  float: right;
+  width: 100%;
+  padding-left: 1%;
+  margin: 0;
+  border-top: 1px solid #213888;
+  border-bottom: 1px solid #213888;
+  border-left: 1px solid #213888;
+}
+
+.comments h4{
+  font-size: 1.5em;
+}
+
+.comment{
+  width: 70%;
+  margin: 2% 0;
+  box-shadow: 1px 2px 5px #213888;
+  -moz-box-shadow: 1px 2px 5px #213888;
+  -webkit-box-shadow: 1px 2px 5px #213888;
+  background-color: #F1F1F1;
+  word-wrap: break-word;
+}
+
+.comment p{
+  margin: 0 1%;
+}
+
+.comment a{
+  float: right;
+  margin: 0 1%;
+  font-size: 1em;
+}
+
+.comment_name{
+  display: inline-block;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1em;
+}
+
+.comment_text{
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.comment_body{
+  margin: 5% 2%;
+}
+
+.comment_time{
+  float: right;
+}
+
+#number_count{
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+}
+
+.centrar{
+  margin: 0 40%;
+}
+
+.inputs{
+  width: 90%;
+}
+
+.log{
+  width: 94%;
+  margin: 1% 3% 0 3%;
+  padding: 1% 0;
+  background-color: #F1F1F1;
+}
+
+.field{
+  width: 95%;
+  margin: 1% auto;
+}
+
+.login_field{
+  width: 30%;
+}
+
+textarea{
+  width: 90%;
+  resize: none;
+  text-decoration: none; 
+}
+
+.links_container{
+  float: left;
+  margin-top: 8%;
+}
+
+.links_container ul{
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.links_container ul li{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.links_container a{
+  text-decoration: none;
+  color: #000;
+}
+
+.links_container p{
+  position: relative;
+  bottom: 20%;
+  right: -78%;
+  display: inline-block;
+  vertical-align: super;
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  color: #213888;
+}
+
+.links_images{
+  position: relative;
+  left: 25%;
+  display: inline-block;
+  transition-property: right 1s ease-in-out;
+  transition-duration: 1s, 1s;
+  transition-delay: 0s, 1s;
+  -webkit-transition-property: right 1s ease-in-out;
+  -webkit-transition-duration: 1s, 1s;
+  -webkit-transition-delay: 0s, 1s;
+  -moz-transition-property: right 1s ease-in-out;
+  -moz-transition-duration: 1s, 1s;
+  -moz-transition-delay: 0s, 1s;
+  width: 20%;
+  margin: 2% 0;
+  margin-left: 10%
+}
+
+.links_images:hover{
+  transition-property: left 1s ease-in-out;
+  transition-duration: 1s, 1s;
+  transition-delay: 0s, 1s;
+  -webkit-transition-property: left 1s ease-in-out;
+  -webkit-transition-duration: 1s, 1s;
+  -webkit-transition-delay: 0s, 1s;
+  -moz-transition-property: left 1s ease-in-out;
+  -moz-transition-duration: 1s, 1s;
+  -moz-transition-delay: 0s, 1s;
+  margin: 2% -20%;
+  margin-right: -50%;
+}
+
+footer{
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 5%;
+  background-color: #3F3E3E;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  color: #FFF;
+}
+
+footer div{
+  float: right;
+  margin-right: 10%;
+}
+
+footer a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media all and (max-width: 815px) {
+  .header{
+    height: 150px;
+  }
+  
+  .search{
+    width: 60%;
+  }
+
+  header h1{
+    font-size: 5em;
+  }
+
+  aside {
+    display: inline-block;
+    width: 20%;
+    margin-right: 1%;
+    vertical-align: top;
+  }
+
+  .links{
+    margin: 8% 5%;
+    font-size: 1.5em;
+  }
+
+  .links_container p{
+    display: none;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: "Alegreya Sans", sans-serif;
+  }
+
+  .links_images{
+    transition-property: none;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+  }
+  
+  .links_images:hover{
+    position: relative;
+    left: 25%;
+    display: inline-block;
+    transition-property: none;
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    margin: 2% 0;
+    margin-left: 10%
+
+  }
+
+  section{
+    width: 65%;
+    margin-right: 7.5%;
+    margin-left: 0;
+  }
+  
+  .profile p{
+    float: right;
+    width: 100%;
+  }
+
+  .posts{
+    float: none;
+    width: 100%;
+  }
+
+  .unique{
+    width: 103%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .header{
+    height: 100px;
+  }
+  
+  header h1{
+    font-size: 3em;
+  }
+
+  .header_links{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    float: left;
+  }
+
+  .search{
+    position: absolute;
+    bottom: 1%;
+    left: 5%;
+    display: block;
+  }
+
+  header h1{
+    font-size: 3em;
+  }
+
+  aside {
+    width: 94%;
+    margin: 2% 3%;
+  }
+
+   aside div{
+    text-align: center;
+  }
+
+  aside ul{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  aside li{
+    display: inline;
+  }
+
+  .links{
+    display: inline-block;
+    margin: 0 5%;
+  }
+
+  section{
+    display: block;
+    float: none;
+    width: 91.5%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+  }
+  
+  .profile img{
+    float: none;
+    width: 30%;
+    margin: 2% 35%;
+  }
+
+  .inline{
+    float: none;
+  }
+  
+  .posts{
+    width: 98%;
+  }
+
+  .unique{
+    width: 101%;
+  } 
+
+  .comment{
+    width: 100%;
+  }
+
+  .field{
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .links_container{
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 0;
+  }
+  
+  .links_container ul{
+    margin-top: 4%;
+  }
+
+  .links_container ul li{
+    float: left;
+    display: inline-block;
+    width: 20%;
+    margin: 0 1%;
+  }
+
+  .links_images{
+    width: 40%;
+  }
+
+  footer div{
+    display: none;
+  }
+}
+
+@media all and (max-width: 305px) {
+  
+  header h1{
+    font-size: 2em;
+  }
+  
+  section{
+    width: 89.5%;
+  }
+
+  .posts{
+    width: 100%;
+    margin-left: 2.5%;
+  }
+
+  .unique{
+    width:103%;
+  }
+
+  .links{ 
+    width: 40%;
+    font-size: 1.2em;
+    margin: 0 2%;
+  }
+
+  .links_images{
+    width: 60%;
+  }
+  
+  .links_container ul li{
+    overflow: visible;
+  }
+  aside div{
+    text-align: center;
+  }
+
+  aside ul{
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  aside a{
+    display: inline;
+    width: 25%;
+  }
+  
+  footer{
+    display: none;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
