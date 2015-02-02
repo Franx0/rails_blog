@@ -24,7 +24,7 @@ code{
   font-size: 1em;
   line-height: 80%;
   color: #FFF;
-  background: hsl(220, 80%, 90%);
+  background color: #272822;
   white-space: pre-wrap;       
   white-space: -moz-pre-wrap;  
   white-space: -pre-wrap;      
@@ -716,7 +716,7 @@ footer a{
   .links_container ul li{
     overflow: visible;
   }
-  
+
   aside div{
     text-align: center;
   }
