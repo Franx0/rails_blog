@@ -13,7 +13,7 @@ hr{
   border: 0.05em solid #213888;
 }
 
-pre{
+code{
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -24,7 +24,7 @@ pre{
   font-size: 1em;
   line-height: 80%;
   color: #FFF;
-  background-color: #303030;
+  background: hsl(220, 80%, 90%);
   white-space: pre-wrap;       
   white-space: -moz-pre-wrap;  
   white-space: -pre-wrap;      
@@ -145,10 +145,6 @@ aside{
 aside div{
   width: 100%;
   padding: 3% 0;
-  background-color: #9F9C9E;
-  box-shadow: 5px 5px 10px 2px 1#C5C5C5;
-  -moz-box-shadow: 5px 5px 10px 2px #C5C5C5;
-  -webkit-box-shadow: 5px 5px 10px 2px #C5C5C5;
 }
 
 aside ul{
@@ -605,7 +601,7 @@ footer a{
     margin: 2% 3%;
   }
 
-   aside div{
+  aside div{
     text-align: center;
   }
 
@@ -679,7 +675,7 @@ footer a{
     width: 40%;
   }
   
-  pre{
+  code{
     font-size: 0.5em;   
   }
 
@@ -720,6 +716,7 @@ footer a{
   .links_container ul li{
     overflow: visible;
   }
+  
   aside div{
     text-align: center;
   }
@@ -735,7 +732,7 @@ footer a{
     width: 25%;
   }
   
-  pre{
+  code{
     font-size: 0.25em;   
   }
   footer{
