@@ -13,7 +13,7 @@ hr{
   border: 0.05em solid #213888;
 }
 
-code{
+pre{
   width: 90%;
   height: auto;
   margin: 0 auto;
@@ -148,7 +148,6 @@ aside div{
 }
 
 aside ul{
-  padding-left: 5%;
   list-style-type: none;
   line-height: 2em;
 }
@@ -157,6 +156,7 @@ aside ul{
   display: block;
   margin: 8% 7%;
   text-decoration: none;
+  text-align: center;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5em;
   font-weight: bold;
@@ -606,7 +606,6 @@ footer a{
   }
 
   aside ul{
-    padding: 0;
     margin: 0 auto;
     text-align: center;
   }
@@ -675,7 +674,7 @@ footer a{
     width: 40%;
   }
   
-  code{
+  pre{
     font-size: 0.5em;   
   }
 
@@ -722,7 +721,6 @@ footer a{
   }
 
   aside ul{
-    padding: 0;
     margin: 0 auto;
     text-align: center;
   }
@@ -732,7 +730,7 @@ footer a{
     width: 25%;
   }
   
-  code{
+  pre{
     font-size: 0.25em;   
   }
   footer{
