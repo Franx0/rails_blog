@@ -1,16 +1,11 @@
 body{
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
 header{
   padding: 1% 3% 0 3%;
-}
-
-hr{
-  margin: 0;
-  border: 0.05em solid #213888;
 }
 
 pre{
@@ -177,7 +172,7 @@ section{
   float: right;
   width: 75%;
   padding-bottom: 2%;
-  margin: 0.5% 3% 3.5% 1.5%;
+  margin: 0.5% 3% 0.5% 1.5%;
   text-decoration: none
 }
 
@@ -192,7 +187,9 @@ section{
   float: left;
   width: 20%;
   margin: 2% 5% 0 0.5%;
-  border-radius: 50% 50%;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 
 .profile p{
@@ -486,25 +483,65 @@ textarea{
 }
 
 footer{
-  display: block;
-  position: fixed;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  padding: 0 5%;
-  background-color: #3F3E3E;
+  height: 12em; 
+  clear: both;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
   color: #FFF;
+  margin: 0;
+  padding: 0;
 }
 
 footer div{
-  float: right;
-  margin-right: 10%;
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  vertical-align: middle;
+  color: #000;
 }
 
-footer a{
-  text-decoration: none;
-  color: #FFF;
+.hr{  
+  text-align: center; 
+}
+
+.hr img{
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  width: 8%;
+  margin: -5% 0;
+  border: 2em double #FFF;
+  background-color: #0C1945;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  box-shadow: inset 0 0 3em #FFF;
+  -webkit-transition: inset 0 0 3em #FFF;
+  -moz-transition: inset 0 0 3em #FFF;
+  transition: opacity 0.25s ease-in-out;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+}
+
+.hr img:hover{
+  box-shadow: inset 0 0 3em #FFF;
+  -webkit-transition: inset 0 0 3em #FFF;
+  -moz-transition: inset 0 0 3em #FFF;
+  opacity: 0;
+}
+
+
+.hr hr{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 5px;
+  margin: 0 auto;
+  border: 3px solid #000;
+  border-color: #0C1945;
 }
 
 @media all and (max-width: 815px) {
@@ -575,6 +612,10 @@ footer a{
 
   .unique{
     width: 103%;
+  }
+
+  .hr img{
+    width: 10%;
   }
 }
 
@@ -687,10 +728,12 @@ footer a{
     font-size: 0.5em;   
   }
 
-  footer div{
-    display: none;
+  .hr img{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 20%;
   }
-}
 
 @media all and (max-width: 305px) {
   
@@ -742,7 +785,9 @@ footer a{
   pre{
     font-size: 0.25em;   
   }
-  footer{
-    display: none;
+
+  .hr img{
+    position: absolute;
+    left: 30%;
   }
 }
