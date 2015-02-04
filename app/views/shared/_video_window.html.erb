@@ -1,0 +1,7 @@
+<div class = "links_container">
+    <% @post.each do |post| %>
+        <% if !post.video.blank? %>
+        <iframe class = "video" src = <%= post.video %> frameborder="0" allowfullscreen></iframe>
+        <% end %>
+    <% end %>
+</div>
