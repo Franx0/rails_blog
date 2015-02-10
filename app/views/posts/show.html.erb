@@ -1,3 +1,7 @@
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag "comments", :defer => "defer" %>
+<% end %>
+
 <section>
     <div class = "posts read text"> 
         <h2 class = "title"><%= simple_format (h(@post.title)) %></h2>
